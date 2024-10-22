@@ -78,17 +78,26 @@
                       color: rgb(70, 127, 74);
                       transition: 500ms;
      }
-    header{display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: flex-end;}
+    header{display: flex;}
+
+    header>div{border: 0.2rem solid red;}
+
+    header>div.logo {width: 25%;}/* aqui te diriges a los div que sean solo de header lo que hace es el simbolo >, el punto hace que seleciones en los que estan en la clase logo*/
+
+    header>div.titulo { width: 75%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-start;}
 
  
      h1,h2,p{ width: 50%;
               background-color: cadetblue;
               margin: 0.2rem;
               border: 0.3 solid green;
-            text-align: center;} 
+              text-align: center;} 
+
+    
 
       /*  Codigo pagina en tablet */
 
