@@ -1,72 +1,55 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto básico</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        /*  Reset    */
-        * {padding: 0;
-            margin: 0;}
-            a {text-decoration: none; color: black;}/*quita el subrayado que tienen los url en general*/
 
-        /*  Codigo pagina    */
-
-        header,nav,main,footer {width: 80%;
-            margin: 0 auto;}
-
-        header{min-height: 8rem;/*rem es unidad de medida que se adapta a todos los dispocitivo*/
-            background-color: pink;}
-
-        nav{width: 80%;
-            min-height: 4rem;
-            background-color: orange;}
-
-        main{width: 80%;
-            min-height: 20rem;
-            background-color: lightblue;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;}
-
-        footer{width: 80%;
-            min-height: 7rem;
-            background-color: chartreuse;}
-
-        .ponerBorde{border: 0.3rem solid black;}
-
-        main div {width: 30%;
-            min-height: 5rem;
-            background-color: lightgray;
-            border: 0.2rem solid red;}
-
-        .izda{background-color: rgba(101, 187, 187, 0.555);}
-        .dcha{background-color: rgba(106, 202, 9, 0.521);}
     </style>
 </head>
 <body>
-    
-    <header>
 
-    </header>
+  
+
     <nav class="ponerBorde">
+        <ul>
+            <li class="menu"><a href="">enlace1</a></li>
+            <li class="menu"><a href="">enlace2</a></li>
+            <li class="menu"><a href="">enlace3</a></li>
+            <li class="menu"><a href="">enlace4</a></li>
+            <li class="menu"><a href="">enlace5</a></li>
+        </ul>
 
     </nav>
+
+    <header>
+        <h1> Viajes Bizkaia</h1>
+        <h2> Visita nuestro y disfruta de los lugares mas bellos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores ea architecto voluptas at labore id adipisci eius dicta! <br>Perferendis quas consequatur nesciunt est accusantium ipsum cumque, culpa ad earum.</p>
+
+    </header>
+
     <main id="principal">
-        <div class="izda"> columna 1 parrafo
-
-        </div>
-        <div class="dcha">columna 2 parrafo 
-        </div>
-        <div class="centro">columna 3 parrafo 
-        </div>
-        <div class="2izda">columna 4 parrafo 
-        </div>
-
+        <div class="izda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            <a href="#" target="_blank">Soluta</a> id illum veritatis quam numquam harum. Repellat a voluptatibus 
+            pariatur incidunt.</div>
+        <div class="dcha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic velit 
+            porro inventore impedit veritatis iste placeat necessitatibus amet 
+            natus! Deserunt.</div>
+        <div class="centro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic velit 
+            orro inventore impedit veritatis iste placeat necessitatibus amet 
+            natus! Deserunt.</div>
+        <div class="2izda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic velit 
+            orro inventore impedit veritatis iste placeat necessitatibus amet 
+            natus! Deserunt.</div>
     </main>
-    <footer class="ponerBorde">
+
+    <footer class="ponerBorde"> 
 
     </footer>
 
+    
 </body>
 </html>
