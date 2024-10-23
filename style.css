@@ -9,41 +9,43 @@
              margin-right: 0;}
      /*  Codigo pagina en desktop  */
 
-     header,nav,main,footer {width: 80%;
-                             margin: 0 auto;}
+    body {padding-top: 7rem;}/*esta regla te permite que todo el body se escon atravez de nav"enlace"*/
 
-     header { 
-             min-height: 15rem;
+    header,nav,main,footer {width: 80%;
+                             margin: 0 auto;}/*esta regla te permite insertar los bordes*/
+
+
+    header { min-height: 15rem;
              background-color: pink;}
 
-     nav{   
-             min-height: 7rem;
-             background-color: orange;}
+    nav{ min-height: 7rem;
+         background-color: orange;
+         position: fixed; /*esto es para que el menu "enlace" se quede fijo al moverte por la pagina*/
+         top: 0%;
+         left: 10%;/*aqui lo centramos es necesario hacer si no se justfica a la iz por defecto*/
+    
+        }
 
-     main {  
-             min-height: 20rem;
+    main {   min-height: 60rem;
              background-color: lightblue;
              display: flex;
              justify-content:space-around;
-             flex-wrap: wrap;
-               
-         }
+             flex-wrap: wrap;}
 
-     footer {
-             min-height: 7rem;
+    footer {min-height: 7rem;
              background-color: chartreuse;}
 
-     .ponerBorde {border: 0.3rem solid black;}
+    .ponerBorde {border: 0.3rem solid black;}
 
-     main div {width: 30%;
+    main div{width: 30%;
              min-height: 5rem;
              background-color: lightgray;
              border: 0.2rem solid red;}
 
-     .izda {background-color: rgba(215, 221, 48, 0.533);}
-      .dcha {background-color: rgb(140, 215, 65);}
+    .izda {background-color: rgba(215, 221, 48, 0.533);}
+    .dcha {background-color: rgb(140, 215, 65);}
 
-      main div a {font-size: 1.2rem;
+    main div a {font-size: 1.2rem;
                  color: rgb(159, 60, 60);
                  font-weight: 600;
                  font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -57,15 +59,12 @@
          align-items: center;}
 
 
-     nav ul li {width: 8rem;
-            height: 3.5rem;
-        
-        /* border: 0.1rem solid green;  */
-         margin: 0.5rem;
-     
-     }
-
-     ul li a {  font-size: 2rem;
+    nav ul li {width: 8rem;
+                height: 3.5rem;
+                /* border: 0.1rem solid green;  */
+                margin: 0.5rem;}
+ 
+    ul li a {  font-size: 2rem;
                 color: rgb(214, 201, 227);
                 display: block;
                 text-align:center;
@@ -74,10 +73,10 @@
                 border-radius: 0.4rem;
      }
 
-     ul li a:hover {  background-color: rgb(214, 201, 227);
+    ul li a:hover {  background-color: rgb(214, 201, 227);
                       color: rgb(70, 127, 74);
-                      transition: 500ms;
-     }
+                      transition: 500ms;}
+
     header{display: flex;}
 
     header>div{border: 0.2rem solid red;}
@@ -91,13 +90,25 @@
                         justify-content: flex-start;}
 
  
-     h1,h2,p{ width: 50%;
+    h1,h2,p{ width: 50%;
               background-color: cadetblue;
               margin: 0.2rem;
               border: 0.3 solid green;
               text-align: center;} 
-
     
+
+    section{width: 100%;
+            background-color: chartreuse;
+            min-height: 20rem;
+            border: 0.1rem solid red;
+            display: flex;}
+            
+    article.mapa{width: 40%;}
+    
+    article.form{width: 60%; 
+                background-color: darkgrey;
+                min-height: 20rem;
+                border: 0.1rem solid red;}    
 
       /*  Codigo pagina en tablet */
 

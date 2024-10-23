@@ -1,0 +1,129 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto básico</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /**esto esunicamente al boton de Enviar**/
+        .form span {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 0.9rem;
+                    font-weight: 200;
+                    font-style: italic;}
+
+        /**aqui solo estamos dando estilo a las etiquetas de tipo imput pero de type Radio el [] permite desglosar y elegir unicamente los tipos de imputs**/
+        input [type="radio"] {background-color: aqua;}
+
+    </style>
+</head>
+<body>
+
+  
+
+    <nav class="ponerBorde">
+        <ul>
+            <li class="menu"><a href="index.html">Home</a></li> 
+            <li class="menu"><a href="">enlace2</a></li>
+            <li class="menu"><a href="">enlace3</a></li>
+            <li class="menu"><a href="">enlace4</a></li>
+            <li class="menu"><a href="">enlace5</a></li>
+        </ul>
+
+    </nav>
+
+    <header>
+        <div class="logo">
+
+        </div>
+        <div class="titulo">
+            <h1> Contacto</h1>
+            <h2> Visita nuestro y disfruta de los lugares mas bellos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores ea architecto voluptas at labore id adipisci eius dicta! <br>Perferendis quas consequatur nesciunt est accusantium ipsum cumque, culpa ad earum.</p>
+            </div>
+      
+
+        
+    </header>
+
+    <!--AQUI HEMOS ECHO TRE TIPO DE FORMULARIOS, RELLENO VERIFICACION Y DESPLIEGE-->
+    <main id="principal">
+        <section>/
+            <article class="mapa"></article>
+            <article class="form">
+        <!--formulario de Relleno-->
+                <form action="recogida.php" method="get"> <!--Formulario-->
+
+               <label for="primero"> Nombre <!--value es un valor predeterminado-->
+                    <input type="text" id="primero" value="Angel" name="nombre" placeholder="tu nombre" required/> <!--el required hace obligatorio llenar los campos del formulario-->
+                </label>
+
+                <label for="segundo"> Apellido <!--value es un valor predeterminado como nombre apellido predeterminado-->
+                    <input type="text" id="segundo" value="Perez" name="apellido" placeholder="tu apellido"/>
+                </label>
+
+               <!--Esto es una casilla de Verificacion-->     
+               <p>Deporte que Practicas</p>           
+               <label for="deporte 1"> Atletismo
+                <input id="Deporte que Practicas" type="checkbox" value="1" name="deporte2"> <!--este es un boton especifico que hace una funcion-->
+                </label>
+
+                <label for="deporte 2"> Natacion
+                <input id="Deporte que Practicas" type="checkbox" value="2" name="deporte2" checked> <!--este es un boton especifico que hace una funcion-->
+                </label>
+
+                <label for="deporte 3"> Gimnasia
+                <input id="Deporte que Practicas" type="checkbox" value="3" name="deporte3"> <!--este es un boton especifico que hace una funcion-->
+                </label>
+
+                <!--casilla de verficacion-->
+                <p>¿Donde Vives?</p>
+                <label for="Prosedencia1"> Bizkaia
+                <input tid="Prosedencia1" type="radio" value="bizkaia" name="Prosedencia" required> <!--Cheked permite que este como ejemplo de chequeo-->
+                </label>
+
+                <label for="Prosedencia2"> Araba
+                    <input tid="Prosedencia2" type="radio" value="araba" name="Prosedencia" required> <!--el Name es lo que permite hacer la diferencia entre ellos el hace que tengas que elegir una cosa-->
+                    </label>
+
+                   <label for="Prosedencia3"> Gipuzkua
+                <input tid="Prosedencia3" type="radio" value="gipuzkua" name="Prosedencia" required> <!---->
+                </label>
+
+                <label for="Prosedencia4"> Otro Lugar
+                    <input tid="Prosedencia4" type="radio" value="otro" name="Otro Lugar" required > 
+                    </label>
+                
+                    <!--selec es desplegable que conforman 2 elementos-->
+                    <p>¿Como te desplazas al Centro</p>
+                    <select name="transporte" id="desplazamiento"> <!--esto es una lista desplegable con las opciones que temos aqui-->
+                        <option value="1">____</option>
+                        <option value="2">Metro</option Cheked>
+                        <option value="3">Coche propio</option>
+                        <option value="4">Autobus</option>
+                        <option value="5">Otro</option>
+                        </select>
+
+                        <p></p>
+         
+                <!-- <input type="submit" value="ENVIAR"> forma sencilla para un Boton ya que no permite parametro como imagen icono etc-->
+                 <!--otra forma de hacer otro bonton-->
+
+                <!--esto es Botones de envio y limpieza-->
+                <button type="reset">Resetear</button>
+                <button type="submit"><span>ENVIAR</span></button>
+
+                </form> <!--Fin de Formulario-->
+
+
+            </article>
+        </section>
+    </main>
+
+    <footer class="ponerBorde"> 
+
+    </footer>
+
+    
+</body>
+</html>
