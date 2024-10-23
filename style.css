@@ -108,7 +108,12 @@
     article.form{width: 60%; 
                 background-color: darkgrey;
                 min-height: 20rem;
-                border: 0.1rem solid red;}    
+                border: 0.1rem solid red;}  
+     /**ESTE CODIGO ES PARA AGREGAR IMAGENES IMPORTANTE SABER LA CARPETA DE ORIGEN, BACKGROUN-REPEAT NO REPEAT TE PERMITE NO REPETIR LA IMAGEN SI NO SE HACE QUE DRIA COMO UN FONDO**/           
+    footer {background-image: url("img_corporativo/pattern.png");
+           background-size: 11%;
+          /**background-repeat: no-repeat;**/
+          background-repeat: repeat-x;}
 
       /*  Codigo pagina en tablet */
 
